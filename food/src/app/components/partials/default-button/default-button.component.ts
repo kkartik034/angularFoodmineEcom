@@ -1,7 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, input, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-default-button',
+  selector: 'default-button',
   templateUrl: './default-button.component.html',
   styleUrl: './default-button.component.css'
 })
@@ -14,6 +14,12 @@ text: string = 'Submit';
 bgColor = '#e72929';
 @Input()
 color = 'white';
+@Input()
+fontSizeRem = 1.3;
+@Input()
+widthRem = 12;
+@Output()
+onClick = new EventEmitter();
 
 
 
