@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class NotFoundComponent {
 @Input()
-visible = false;     //if we said it true then it will be visible in cart but the ngif in cart page !true to cart length
+visible = true;     //if we said it true then it will be visible in cart but the ngif in cart page !true to cart length
 @Input()
 notFoundMessage = "Nothing Found!";
 @Input()

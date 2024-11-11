@@ -39,6 +39,7 @@ error: (errorResponse)=>{
   })
  );
 }
+
 register(userRegister:IUserRegister ): Observable<User>{
   return this.http.post<User>(USER_REGISTER_URL, userRegister).pipe(
     tap({
@@ -67,11 +68,11 @@ logout(){
 
 
  private setUserToLocalStorage(user:User){
-  localStorage.setItem(USER_KEY,JSON.stringify(user));
+  localStorage.setItem(USER_KEY, JSON.stringify(user));
  }
 
 private getUserFromLocalStorage():User{
-  const userJson =localStorage.getItem(USER_KEY);
+  const userJson = localStorage.getItem(USER_KEY);
   if(userJson) return JSON.parse(userJson ) as User;
 return new User();
 }

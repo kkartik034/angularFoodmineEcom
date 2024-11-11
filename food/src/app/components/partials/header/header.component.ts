@@ -16,7 +16,7 @@ export class HeaderComponent {
       this.cartQuantity = newCart.totalCount;
     }) 
     userService.userObservable.subscribe((newUser) => {
-      this.user =newUser;
+      this.user = newUser;
     })
   }
 

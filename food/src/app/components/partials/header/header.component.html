@@ -6,7 +6,8 @@
          <li *ngIf="!isAuth"> 
             <a routerLink="/login" > Login</a>
            </li>
-        <li *ngIf="isAuth" class="menu-container">
+        <li *ngIf="isAuth" class="menu-container">    
+            <!-- is auth is not working while login // login is not removed while login -->
             <a routerLink="/dashboard">{{user.name}}</a>
         
         <div class="menu" >
