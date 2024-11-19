@@ -24,6 +24,9 @@ import { RegisterPageComponent } from './components/pages/register-page/register
 import { LoadingComponent } from './components/partials/loading/loading.component';
 
 import { LoadingInterceptor } from './shared/interceptor/loading.interceptor';
+import { CheckoutPageComponent } from './components/pages/checkout-page/checkout-page.component';
+import { OrderItemsListComponent } from './components/partials/order-items-list/order-items-list.component';
+import { MapComponent } from './components/partials/map/map.component';
 
 
 
@@ -44,7 +47,10 @@ import { LoadingInterceptor } from './shared/interceptor/loading.interceptor';
     TextInputComponent,
     DefaultButtonComponent,
     RegisterPageComponent,
-    LoadingComponent
+    LoadingComponent,
+    CheckoutPageComponent,
+    OrderItemsListComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
